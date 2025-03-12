@@ -1,0 +1,26 @@
+name: Deploy to Neocities
+
+# only run on changes to publishing branch
+on:
+  push:
+    branches:
+      - main
+
+# no concurrent deployment
+concurrency:
+  group: deploy-to-neocities
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+   # when the public folder is ready, deploy to neocities!
+    - name: Deploy to Neocities
+      uses: bcomnes/deploy-to-neocities@v3.0.2
+      with:
+        api_key: ${{ secrets.NEOCITIES_API_KEY }}
+        cleanup: false
+        dist_dir: public

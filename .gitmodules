@@ -1,0 +1,3 @@
+[submodule "public/testing/ep-sprezzatura"]
+	path = public/testing/ep-sprezzatura
+	url = https://github.com/computerfriendship/ep-sprezzatura.git
