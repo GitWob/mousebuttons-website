@@ -17,6 +17,8 @@ jobs:
 
     steps:
     - uses: actions/checkout@v4
+      with:
+        submodules: true
    # when the public folder is ready, deploy to neocities!
     - name: Deploy to Neocities
       uses: bcomnes/deploy-to-neocities@v3.0.2
