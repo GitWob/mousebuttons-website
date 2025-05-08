@@ -1,0 +1,24 @@
+{
+  "name": "mousebuttons-website",
+  "version": "1.0.0",
+  "description": "Node package to run async-neocities and deploy my website!",
+  "homepage": "https://github.com/GitWob/mousebuttons-website#readme",
+  "bugs": {
+    "url": "https://github.com/GitWob/mousebuttons-website/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GitWob/mousebuttons-website.git"
+  },
+  "license": "GPL-3.0",
+  "author": "Bea O'Brien",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "async-neocities": "^4.1.0"
+  }
+}
